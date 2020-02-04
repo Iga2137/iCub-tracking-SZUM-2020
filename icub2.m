@@ -1,0 +1,40 @@
+while(1)
+    
+    fprintf(world,'d')
+    fprintf(world,'world get box 1')
+    pause(0.1)
+    while world.BytesAvailable>0
+    fscanf(world)
+    end
+
+    p = ans;
+    xyz = str2num(p);
+    
+    try
+        alpha = atan2d(xyz(1),xyz(3));
+        beta = atan2d(xyz(2)-1,xyz(3));
+    catch
+        alpha = 0;
+        beta = 0;
+    end
+    
+    cos1 = ['set pos 4 ' num2str(-alpha)];
+    cos2 = ['set pos 3 ' num2str(beta)];
+    
+    fprintf(eye,'d')
+    fprintf(eye,cos1)
+    pause(0.1)
+    while eye.BytesAvailable>0
+    fscanf(eye)
+    end
+    
+    fprintf(eye,'d')
+    fprintf(eye,cos2)
+    pause(0.1)
+    while eye.BytesAvailable>0
+    fscanf(eye)
+    end
+
+    
+     
+end
