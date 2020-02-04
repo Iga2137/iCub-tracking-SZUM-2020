@@ -33,7 +33,9 @@ world set box 1 x y z
 gdzie x,y,z oznaczają współrzędne położenia kostki.
 
 Obraz z kamer oczu robota możemy obserwować za pomocą:
+
    http://82.145.77.104:10019/?action=stream
+   
    http://82.145.77.104:10020/?action=stream
 
 Tak długo, jak uruchomiony jest program icub2.m, robot wodzi oczami za obiektem
