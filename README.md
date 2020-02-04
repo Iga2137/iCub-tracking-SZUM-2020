@@ -4,7 +4,7 @@ Celem projektu jest śledzenie obiektu za pomoca oczu robota iCub.
 
 # Pierwsze kroki
 
-Na wstępie należy połączyć się z serwerem i uruchomić symulację
+Na wstępie należy za pomocą terminala połączyć się z serwerem i uruchomić symulację
 ```bat
 $ yarpserver
 $ iCub_SIM
